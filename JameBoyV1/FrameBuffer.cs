@@ -28,7 +28,7 @@ namespace JameBoyV1
         //int bytesNeeded = Math.Abs(frameData.Stride) * frame.Height;
         //byte[] color = new byte[bytesNeeded];
 
-            
+        //currently loops through all the colors of the rainbow. I used it to see if i could achieve at least 60fps   
 
         //    for (red = 1; red< 255; red++)
         //    {
