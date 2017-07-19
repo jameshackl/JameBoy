@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 namespace JameBoyV1
 {
@@ -12,6 +13,9 @@ namespace JameBoyV1
 
         static void Main(string[] args)
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainWindow());
 
             string romPath = "c:\\Testing\\tetris.gb";
             byte[] cartridgeROM = File.ReadAllBytes(romPath);
