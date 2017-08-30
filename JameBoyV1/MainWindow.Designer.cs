@@ -54,8 +54,10 @@
             this.openAndRunToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonStepForward = new System.Windows.Forms.Button();
             this.loadROMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxRegisters.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelRegisterA
@@ -219,6 +221,7 @@
             this.buttonStartEmulation.TabIndex = 10;
             this.buttonStartEmulation.Text = "Start";
             this.buttonStartEmulation.UseVisualStyleBackColor = true;
+            this.buttonStartEmulation.Click += new System.EventHandler(this.buttonStartEmulation_Click);
             // 
             // buttonPauseEmulation
             // 
@@ -240,7 +243,7 @@
             // 
             // textBoxMessages
             // 
-            this.textBoxMessages.Location = new System.Drawing.Point(28, 309);
+            this.textBoxMessages.Location = new System.Drawing.Point(12, 372);
             this.textBoxMessages.Multiline = true;
             this.textBoxMessages.Name = "textBoxMessages";
             this.textBoxMessages.Size = new System.Drawing.Size(436, 137);
@@ -289,11 +292,20 @@
             this.loadROMToolStripMenuItem.Text = "Load ROM";
             this.loadROMToolStripMenuItem.Click += new System.EventHandler(this.loadROMToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 470);
+            this.ClientSize = new System.Drawing.Size(675, 521);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonStepForward);
             this.Controls.Add(this.textBoxMessages);
             this.Controls.Add(this.buttonStopEmulation);
@@ -309,6 +321,7 @@
             this.groupBoxRegisters.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,5 +355,6 @@
         private System.Windows.Forms.ToolStripMenuItem openAndRunToolStripMenuItem;
         private System.Windows.Forms.Button buttonStepForward;
         private System.Windows.Forms.ToolStripMenuItem loadROMToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

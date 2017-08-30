@@ -15,6 +15,8 @@ namespace JameBoyV1
     class FrameBuffer
     {
 
+        //Code to draw a frame. needs to be run in ui thread.
+        //Graphics g = pe.Graphics;
         //Bitmap frame = new Bitmap(300, 300, PixelFormat.Format24bppRgb);
         //Rectangle all = new Rectangle(0, 0, frame.Width, frame.Height);
         //byte red = 0;
@@ -51,6 +53,25 @@ namespace JameBoyV1
         //            }
         //        }
         //    }
+
+        public byte LCDControlRegister;
+        public byte LCDStatusRegister;
+
+        public byte scrollY;
+        public byte scrollX;
+
+        public byte LCDCYCoord;
+        public byte LYCompare;
+
+        public byte windowYPosition;
+        public byte windowXPosition; //actually window x position minus 7
+
+        public byte paletteData;
+        public byte objectPalette0Data;
+        public byte objectPalette1Data;
+
+        public byte DMATransferStartAddress;
+
 
 
 

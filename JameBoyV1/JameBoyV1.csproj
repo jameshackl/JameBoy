@@ -52,6 +52,7 @@
     <Compile Include="FrameBuffer.cs" />
     <Compile Include="CPU.cs" />
     <Compile Include="Cartridge.cs" />
+    <Compile Include="GlobalData.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>

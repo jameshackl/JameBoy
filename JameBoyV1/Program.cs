@@ -17,8 +17,6 @@ namespace JameBoyV1
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());
 
-            //string romPath = "c:\\Testing\\tetris.gb";
-            //byte[] cartridgeROM = File.ReadAllBytes(romPath);
             //string gameTitle = "Title: ";
         
             //for(int i = 0x0134; i <= 0x0142;i++)
