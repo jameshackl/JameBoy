@@ -76,7 +76,7 @@ namespace JameBoyV1
 
             //currently loops through all the colors of the rainbow.I used it to see if i could achieve at least 60fps
 
-                for (red = 1; red < 255; red++)
+            for (red = 1; red < 255; red++)
             {
                 for (green = 1; green < 255; green++)
                 {
