@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace JameBoyV1
 {
+    //this is strictly CPU registers
+
     public sealed class Registers
     {
         private static Registers instance = null;
